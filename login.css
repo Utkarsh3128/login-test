@@ -167,12 +167,20 @@ img{
         width: auto;
         height: 100%;
         justify-items: center;
+        align-items: center;
     }
     .welcome{
         text-align: center;
     }
+    .login> *{
+      padding: 0 2rem;
+    }
+    .image{
+      margin: 0 2px;
+    }
     img{
         width: auto;
+        height: 350px;
     }
     
 }
