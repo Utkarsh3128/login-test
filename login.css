@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap");
+
 :root {
   --main-icon-color: #5328af;
   --main-bg-color: #f3f3fb;
@@ -13,20 +14,22 @@ body {
   box-sizing: border-box;
 }
 
-img{
-    height: 400px;
+img {
+  height: 400px;
 }
 
-.login, .register{
-    max-width: 35rem;
-    width: 100%;
+.login,
+.register {
+  max-width: 35rem;
+  width: 100%;
 }
-.container{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #load {
@@ -44,6 +47,7 @@ img{
   margin: 0% 0%;
   font-size: 1.8em;
 }
+
 .welcome span {
   font-family: "Poppins";
   color: #8e8d8d;
@@ -54,6 +58,7 @@ img{
   margin: 2.2em 0em;
   margin-bottom: 0em;
 }
+
 .inputs span {
   font-family: "Poppins";
   font-weight: 600;
@@ -77,11 +82,11 @@ img{
   text-overflow: clip;
 }
 
-.forgotpass{
-    display: flex;
-    justify-content: space-between;
-    width: 350px;
-    align-items: center;
+.forgotpass {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  align-items: center;
 }
 
 .forgotpass span {
@@ -110,32 +115,35 @@ img{
   -o-text-overflow: clip;
   text-overflow: clip;
   background: var(--main-icon-color);
-  background: linear-gradient(
-    0deg,
-    rgba(96, 9, 240, 1) 0%,
-    var(--main-icon-color) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(96, 9, 240, 1) 0%,
+      var(--main-icon-color) 100%);
   border: none;
 }
+
 .signin:before {
   height: 0%;
   width: 2px;
 }
+
 .signin:hover {
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
     -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
     inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
     inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
-.back-1{
+
+.back-1 {
   margin-top: -0.6%;
 }
+
 .signupline {
   font-family: "Poppins";
   color: #8e8d8d;
   font-size: small;
   padding: 1em 5em;
 }
+
 .signupbutton,
 .signinbutton {
   font-family: "Poppins";
@@ -144,63 +152,77 @@ img{
   color: var(--main-icon-color);
   cursor: pointer;
 }
+
 .register {
   display: none;
 }
 
 @media screen and (max-width: 1096px) {
-    .container{
-        flex-direction: column;
-        width: 100%;
-        justify-items: center;
-    }
-    .login, .register{
-        order: 2;
-        width: 400px;
-        padding: 0 2rem;
-    }
-    .welcome{
-        text-align: center;
-    }
+  .container {
+    flex-direction: column;
+    width: 100%;
+    justify-items: center;
+  }
+
+  .login,
+  .register {
+    order: 2;
+    width: 400px;
+    padding: 0 2rem;
+  }
+
+  .welcome {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 484px) {
-    .container{
-        flex-direction: column;
-        width: auto;
-        height: 100%;
-        justify-items: center;
-        align-items: center;
-    }
-    .welcome{
-        text-align: center;
-    }
-    .login> *{
-      padding: 0 2rem;
-    }
-    .image{
-      margin: 0 2px;
-    }
-    img{
-        width: auto;
-        height: 350px;
-    }
-    
+  .container {
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .welcome {
+    text-align: center;
+  }
+
+  .login>* {
+    padding: 0 2rem;
+  }
+
+  .register>* {
+    padding: 0 2rem;
+  }
+
+  .image {
+    margin: 0 2px;
+  }
+
+  img {
+    width: auto;
+    height: 350px;
+  }
+
 }
 
 @media screen and (max-width: 380px) {
-    .container{
-        flex-direction: column;
-        width: auto;
-        height: 100%;
-        justify-items: center;
-    }
-    .welcome{
-        text-align: center;
-    }
-    img{
-        max-width: 100%;
-        height: auto;
-    }
-    
+  .container {
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+    justify-items: center;
+  }
+
+  .welcome {
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
 }
